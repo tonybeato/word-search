@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+* { color: #656565; font-family: 'Nunito Sans', sans-serif; }
+
+html {
+     padding: 1rem; 
+    }
+
+body { max-width: 960px; margin: 0 auto; }
+
+h1 {
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #404040;
+    margin: 1rem 0;
+}
+
+.content h2 {
+    font-weight: normal;
+    margin: 1em 0 0;
+    font-size: 1.2em;
+}
+
+a { color: #404040; }
+hr { border: none; border-top: 1px solid lightgray; }
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 3em;
+    text-align: center;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08);
+}
+
+nav h1 { flex: auto; margin: 0; }
+nav h1 a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 1.2em;
+}
+nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
+
+
+.content { padding: 1em 3em; }
+
+.content > header {
+    display: flex; 
+    align-items: flex-end; 
+}
+
+.content > header h1 { flex: auto; margin: 1em 0 0; }
+
+section.content {
+    background-color: #fff;
+    color: white;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.08);
+    margin-top: 2em;
+}
+
+.flash {
+    margin: 1em 0;
+    padding: .5em 1em;
+    background: #2a5e6d;
+    color: white;
+    font-size: .9em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+svg#Capa_1 {
+    height: 16px;
+    width: 16px;
+    margin-right: 10px;
+}
+
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+.post > header > div:first-of-type { flex: auto; }
+.post > header h1 { font-size: 1.5em; margin-bottom: 0; }
+.post .about { color: slategray; font-style: italic; }
+.post .body { white-space: pre-line; }
+.content:last-child { margin-bottom: 0; }
+.content form { margin: 0; display: flex; flex-direction: column; }
+
+.content label {
+    margin-bottom: .5em;
+    font-size: .8em;
+}
+
+.content input, .content textarea {
+    margin: 1rem 0;
+    padding: 2em 1em;
+}
+
+.content textarea { min-height: 12em; resize: vertical; }
+input.danger { color: #cc2f2e; }
+input[type=submit] {
+    padding: .5em;
+    font-size: 1.2em;
+    border: none;
+    background-color: #ff4700;
+    cursor: pointer;
+    color: #fff;
+}
+input[type="submit"]:hover {
+    background-color: #ff5818;
+    transition: .2s;
+}
+ul.data-list {
+    padding: 0;
+    margin: 1em 0;
+}
+
+ul.data-list li {
+    list-style-type: none;
+    padding: 1em 0;
+    border-bottom: 1px dashed #424242;
+}
+
+ul.data-list li:last-child {
+    border-bottom: none;
+}
+
+ul.data-list p {
+    font-style: italic;
+}
+
+span.filename {
+    font-size: .6em;
+    font-style: italic;
+    color: #75a520;
+}
+
+span.example {
+    font-style: italic;
+    font-size: .9em;
+    margin-top: 1em;
+    margin-left: 1em;
+    display: block;
+    color: #949494;
+}
+
+.flash svg {
+    height: 20px;
+    width: 20px;
+    fill: white;
+    display: inline-block;
+}
