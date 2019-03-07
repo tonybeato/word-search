@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h2>
+    {% block title %}Dictionary Word Search{% endblock %}
+  </h2>
+{% endblock %}
+
+{% block content %}
+
+    <form action="" method="post">
+        <input name="entry" placeholder="Type a word...">
+        <input type="submit" value="Find Definition">
+    </form>
+
+{% endblock %}
+
+{% block results %}
+  {% if output %}
+    <section class="content">
+      <h2>Results for '{{ output[0] }}'</h2>
+      <ul class="data-list">
+        {% for item in output[1] %}
+          <li>
+
+            {% for definition in item['definitions'] %}
+              {{ definition }}
+            {% endfor %}
+
+            {% for example in item['examples'] %}
+            <span class="example">'{{ example['text'] }}'</span>
+            {% endfor %}
+
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endblock %}
